@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/57d89fc7a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Toast with bootstrap v5.2</h1>
+    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #103628;">
+	    <div class="container-fluid">	
+      <a class="navbar-brand" href="#">Bernd Mausehund GmbH</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">
+	            <i class="fa-solid fa-wrench"></i>
+	            <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Leistungen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+	</div>
+    </nav>
+    <div class="toast-container position-fixed top-0 start-50 p-3">
+        <div id="cookieToast" class="toast" role="alert" data-bs-autohide="false" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <p>lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem vitae est commodi blanditiis itaque nemo delectus fugit numquam. Recusandae harum architecto dolores natus ducimus fuga beatae at tempore qui est.
+                <p><i class="maus-icon fas fa-cookie-bite"></i>
+                <button type="button" id="accept" class="btn btn-dark">Ok</button></p>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/app.js"></script>
+</html>
