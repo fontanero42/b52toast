@@ -1,0 +1,45 @@
+body {
+  padding-top: 5rem;
+  font-family: 'Lato',Helvetica,Arial,sans-serif;
+}
+
+
+/* Home */
+:root {
+	--maus-green: #103628;
+	--maus-yellow: #FfF101;
+	--maus-grey: #E1E6E4; 
+}
+
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+
+.photo {
+	padding-bottom: 1rem;
+}
+
+.maus {
+	background-color: var(--maus-green);
+}
+
+.maus-title {
+	color: var(--maus-yellow);
+}
+
+.maus-light {
+	background-color: var(--maus-grey);
+}
+
+.maus-icon {
+	font-size: xx-large;
+	color: var(--maus-green);
+}
+
+.hidden {
+	display: none;
+}
