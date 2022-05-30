@@ -16,12 +16,12 @@ const saveToStorage = () => storageType.setItem(consentPropertyName, new Date().
 window.onload = () => {
     const acceptFn = event => {
         saveToStorage(storageType);
-        toast.hide();
+        modal.hide();
         console.log("accept");
     }
 
-    const consentPopup = document.getElementById('cookieToast');
-    const toast = new bootstrap.Toast(consentPopup);
+    const consentPopup = document.getElementById('consent-Dialog');
+    const modal = new bootstrap.Modal(consentPopup);
     
     
     const acceptBtn = document.getElementById('accept');
@@ -29,5 +29,5 @@ window.onload = () => {
 
 
     if (shouldShowPopup()) 
-	    toast.show();
+	    modal.show();
 };

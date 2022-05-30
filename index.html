@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/57d89fc7a3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Toast with bootstrap v5.2</h1>
+    <h1>Modal with bootstrap v5.2</h1>
     <nav class="navbar navbar-expand-md fixed-top" style="background-color: #103628;">
 	    <div class="container-fluid">	
       <a class="navbar-brand" href="#">Bernd Mausehund GmbH</a>
@@ -37,7 +37,7 @@
       </div>
 	</div>
     </nav>
-    <div class="toast-container position-fixed top-0 start-50 p-3">
+<!-- <div class="toast-container position-fixed top-0 start-50 p-3">
         <div id="cookieToast" class="toast" role="alert" data-bs-autohide="false" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
                 <strong class="me-auto">Bootstrap</strong>
@@ -50,6 +50,23 @@
                 <button type="button" id="accept" class="btn btn-dark">Ok</button></p>
             </div>
         </div>
+    </div> -->
+    <div class="modal" id="consent-Dialog" tabindex="-1" data-bs-backdrop="static">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="moad-title">Modal Titel</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="accept">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 <!-- Placed at the end of the document so the pages load faster -->
